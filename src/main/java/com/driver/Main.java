@@ -9,16 +9,19 @@ public class Main {
         B obj2 = new B();
         obj2.meth();
     }
-}
 
-class A{
-    public static String meth(){
-        return "Invoking method from class A";
+    public static class A{
+        public String meth(){
+            return "Invoking method from class A";
+        }
+    }
+
+    public static class B extends A{
+        public String meth(){
+            return "Method is overridden in Extendend class B";
+        }
     }
 }
 
-class B extends A{
-    public static String meth(){
-        return "Method is overridden in Extendend class B";
-    }
-}
+
+
