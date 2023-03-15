@@ -5,8 +5,20 @@ public class Main {
     public static void main(String[] args){
 
         B obj1 = new B();
-        String ans1 = obj1.meth();
+        obj1.meth();
         B obj2 = new B();
-        String ans2 = obj2.meth();
+        obj2.meth();
+    }
+}
+
+class A{
+    public static String meth(){
+        return "Invoking method from class A";
+    }
+}
+
+class B extends A{
+    public static String meth(){
+        return "Method is overridden in Extendend class B";
     }
 }
