@@ -8,8 +8,5 @@ public class Main {
         String ans1 = obj1.meth();
         B obj2 = new B();
         String ans2 = obj2.meth();
-
-        System.out.println(ans1);
-        System.out.println(ans2);
     }
 }
